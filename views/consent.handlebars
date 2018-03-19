@@ -1,0 +1,129 @@
+<form id="pt_consent" value="4" data-parsley-validate="">
+<div class = "container" style="width:90%">
+	<div class = "containerHeader" > 
+		<div class = "row">
+			<div class = "col-xs-12 text-left" id= "contact"> 
+			<h1 id= "mainHeader" > <strong> Consent to Treatment  </strong></h1>
+			<h6 id= "subtitle">Carefully read the instructions before completing</h6>
+			
+			</div>
+		</div>
+	</div> <!--cont.1>-->
+	
+	<div class = "containerConsent" >
+		   <fieldset>
+                <legend id="consent" style ="text-decoration: underline; text-align: center;"> Patient Confidentiality  </legend>
+                <div class="ptConsent">
+                    <label class="consentLabel" for="Consent">Treatment Consent: </label>
+                    
+				<p> 
+
+				I understand that I have the following rights with respect to treatment: </p>
+				<p>
+				1. I have the right to withhold or withdraw consent at any time without affecting my right to future care </p>
+
+				<p>
+				2. The laws that protect the confidentiality of my medical information also apply to telemedicine. 
+				<p>As such, I understand that the information disclosed by me during the course of my therapy is generally confidential.</p>
+				<p> However, there are both mandatory and permissive exceptions 
+				</p>to confidentiality, including, but not limited to reporting child, elder, and dependent adult abuse; 
+				<p>expressed threats of violence towards an ascertainable victim;</p> <p>and where I make my mental or emotional state an issue in a legal proceeding. </p>
+
+			
+			</div>
+		</fieldset>
+
+	</div> <!--cont.2>-->
+	<div class = "containerConsentAgreement" >
+		<fieldset>
+            	
+             	<form name="consentYesNo" id= "consentYesNo">
+             		<p class="consYesNo"><strong> Consent:</strong>    
+				 	<label><input class = "consentYesNo" type="checkbox" value="yes">Yes</label>
+				  	<label><input class = "consentYesNo" type="checkbox" value="No">No</label>
+				  	</p>
+				</form>
+				
+				<div class="fullNameConsent">
+                    <input style="width: 20%" id="FirstName" name="FirstName" placeholder="Firstname" type="text" value="" />
+
+                    <input style="width: 20%" id="LastName" name="LastName" placeholder="Lastname" type="text" value="" />
+                    <br />
+                     <label style="width: 20%"class="firstNameLabel" for="FirstName">First Name</label> 
+                      <label style="width: 20%"class="lastNameLabel" for="LastName">Last Name</label> 
+                </div>
+				<br />
+
+				<div class = "consentDate" >
+					
+						<select style="width: 15%" class="consentMonth" style="width:150px"> 
+							<option value="">  </option>
+							<option value="January"> January </option>
+			                <option value="February"> February </option>
+			                <option value="March"> March </option>
+			                <option value="April"> April </option>
+			                <option value="May"> May </option>
+			                <option value="June"> June </option>
+			                <option value="July"> July </option>
+			                <option value="August"> August </option>
+			                <option value="September"> September </option>
+			                <option value="October"> October </option>
+			                <option value="November"> November </option>
+			                <option value="December"> December </option>
+			             </select>
+			             
+						<select style="width: 15%" class="consentDay" id = "day" style="width:150px">
+							<script>
+			                  var min = 1,
+			                  max = 31,
+			                  select = document.getElementById("day");
+
+			                  for (var i = min; i<=max; i++){
+			                     var opt = document.createElement('option');
+			                     opt.value = i;
+			                     opt.innerHTML = i;
+			                     select.appendChild(opt);
+			                  }
+	              			</script>
+						</select>
+
+						<select style="width: 15%" class="consentYear" id ="year" style="width:150px">
+							<script>
+				                var min = 1920,
+				                max = 2017,
+				                select = document.getElementById("year");
+				                 for (var i = min; i < max;  i++) {
+				                   var opt =document.createElement  ("option");
+				                   opt.value =i;
+				                   opt.innerHTML = i;
+				                   select.appendChild(opt);
+				                 }
+              				</script>
+
+						</select>
+						<br />
+
+						<label  style="width: 15%" class= "consentMonth" id= "month" for="ConsentMonth"> Month </label>
+
+						<label style="width: 15%" class= "consentDay" id= "day" for="ConsentDay"> Day </label>
+
+						<label style="width: 15%" class= "consentYear" id= "year" for="ConsentYear"> Year </label>
+				<br />
+
+				</div>
+			
+
+		</fieldset>
+	</div> <!--cont.3>-->
+
+				 <div style = " text-align: center;"class="submitform" data-type="control_button" id="submit">
+		            <button  id="submit_concent_form" type="submit" class="formSubmitButton">
+		              Submit Form
+		            </button>
+		      	</div>
+			</fieldset>
+	
+		
+</div> <!--cont.all>-->
+</form>
+

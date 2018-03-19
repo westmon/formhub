@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.container {
+  width: 95%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+/*  border-radius: 5px inset #ffffff;*/
+
+}
+body {
+	margin: 100px;
+	padding: 45px;
+	font-family: Arial, "sans-serif";
+	/*background-image:url("../images/form_background.jpeg");*/
+	background-size: 100%;
+
+}
+
+#header{
+	border: black 3px inset;
+	padding: 40px;
+	margin: auto;
+	text-align: center;
+	margin: 21px;
+	border: 10px;
+	padding: 20px;
+}
+@media screen and (max-width: 768px) {
+        #form_patient { width:100%; }
+     }
+
+     /*Tabled Portrait */
+
+    @media screen and (max-width: 768px) {
+        #form_patient { width:100%; }
+     }
+
+      /*iphone */
+
+  	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        img { max-width: 100%; }
+    }
+
+ 	/*ipad*/ 
+
+ 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+		img { max-width: 100%; }
+    }

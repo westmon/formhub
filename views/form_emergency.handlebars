@@ -1,0 +1,125 @@
+
+<form id="em_contact" value="5" data-parsley-validate="">
+<div class = "container" style="width:90%">
+	<div class = "containerHeader" > 
+		<div class = "row">
+			<div class = "col-xs-12 text-left" id= "contact"> 
+			<h1 id= "mainHeader" > <strong>Emergency Contact Form </strong></h1>
+			<p id = "headerSubTitle"> Please fill out the form correctly</p>
+			
+			</div>
+		</div>
+	</div> <!--cont.1>-->
+
+	<div class = "containerEmergency" >
+		   <fieldset>
+           
+                <div class="ptFullName">
+                    <label class="fullNameLabel" for="FullName">Full Name</label>
+                    <div class="controls">
+                        <input style="width: 20%" id="FirstName" name="FirstName" placeholder="Firstname" type="text" value="" data-parsley-required="true" data-parsley-trigger="change" required=""/>
+						<input style="width: 20%" id="MiddleName" name="MiddleName" placeholder="Middlename" type="text" value="" data-parsley-required="true" data-parsley-trigger="change" required="" />
+                        <input style="width: 20%" id="LastName" name="LastName" placeholder="Lastname" type="text" value="" data-parsley-required="true" data-parsley-trigger="change" required=""/>
+                        <br />
+                        <!-- <label class="firstNameLabel" for="FirstName">First Name</label>
+                        <label class="lastNameLabel" for="LastName">Last Name</label> -->
+                    </div>
+                </div>
+                <br />
+
+<!--emergency contact-->
+				 
+
+            </fieldset> <!--cont.2-->
+    </div>
+	<br />
+
+		<div class = "ContainerEmContact" > 
+			<fieldset>
+                <legend id="emContact "> Contact Person Information </legend>
+
+
+                <div class="emFullName">
+                    <label class="emFullNameLabel" for="EmFullName">Full Name</label>
+                    <div class="emControls">
+                        <input style="width: 20%" id="emFirstName" name="emFirstName" placeholder="Firstname" type="text" value="" data-parsley-required="true" data-parsley-trigger="change" required="" />
+                        <input style="width: 20%" id="emLastName" name="EmLastName" placeholder="Lastname" type="text" value="" data-parsley-required="true" data-parsley-trigger="change" required=""/>
+                      
+                      
+                    </div>
+                </div>
+                  <br />
+
+                <div class="emPhoneEmail">
+                	
+                	<input style="width: 20%" id="emPhoneNum" name="Phone" placeholder="Phone Number" type="" value="" data-parsley-required="true" data-parsley-trigger="change" required=""/>
+                	<label class="PhoneNum" for="PhoneNumber">Phone Number</label>
+     
+                    <input class="input-xxlarge" id="emEmail" name="Email" placeholder="email" type="text" value="" data-parsley-required="true" data-parsley-trigger="change" required=""/>
+                    <label class="ptEmailLabel" for="Email" data-parsley-required="true" data-parsley-trigger="change" required="">Email</label>
+                   
+                </div>
+                <br />
+             
+				<div class="emAddress">
+                    <label class="emStreetAddressLabel" for="EmStreetAddress"> Address </label>
+                    <div class="emAddressControls">
+                        <input style="width: 20%" id="emStreetAddress" name="emStreetAddress" placeholder="Street Address" type="text" value="" data-parsley-required="true" data-parsley-trigger="change" required=""/>
+                        <input style="width: 20%" id="emStreetAddress2" name="emStreetAddress2" placeholder="emStreet Address2" type="text" value="" data-parsley-required="true" data-parsley-trigger="change" required=""/>
+                 
+                    </div>
+                </div>
+                <br />
+                <div class="emCity">
+                    
+                    <div class="emCityControls">
+                        <input style="width: 15%" id="emCityAddress" name="EmCityAddress" placeholder="City" type="text" value="" />
+                        <label class="emCityAddressLabel" for="EmCityAddress">City </label>
+						<input style="width: 15%" id="emStateAddress" name="EmStateAddress" placeholder="State / Province" type="text" value="" />
+                        <label class="emStateAddressLabel" for="EmStateAddress">State </label>
+
+                        <input style="width: 15%" id="emPostalCode" name="emPostalCode" placeholder="Postal /Zip Code " type="text" value="" />
+                        <label class="emPostalCodeLabel" for="PostalAddress">Zip Code </label>
+					</div>
+
+					<div>
+						<label class="emCountryLabel" for="EmCountry"> Country </label>
+						<br />
+						<select class="emCountryForm" style="width:100px">
+						    <option value="">  </option>
+				            <option value="United States"> United States </option>
+						</select>
+						
+                    </div>
+           
+            </fieldset>
+  
+		</div> <!--cont.4-->
+
+	 <br />
+
+		<div class = "containerRelationship" >
+			<fieldset>
+                <legend id="relation"> Relationship with Patient  </legend>
+             		<form name="relation" id= "ptRelation" data-parsley-required="true" data-parsley-trigger="change" required="">
+				  		<label><input class = "relation" type="checkbox" value="parent">Parent</label>
+				  		<label><input class = "relation" type="checkbox" value="child">Child</label>
+				  		<label><input class = "relation"  type="checkbox" value="sibling">Sibling</label>
+				  		<label><input class = "relation"  type="checkbox" value="friend">Friend</label>
+				  		<label><input class = "relation"  type="checkbox" value="other">Other</label>
+				  		
+					</form>
+			<br />
+
+				 <div style = "text-align: center; " class="submitform" data-type="control_button" id="submit">
+		            <button id="submit_form_emergency" type="submit" class="formSubmitButton">
+		              Submit Form
+		            </button>
+		      	</div>
+			</fieldset> 
+		</div> <!--cont.3-->
+</div>
+</form>
+
+
+  
