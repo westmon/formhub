@@ -25,8 +25,8 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 var myLogger = function (req, res, next) {
-  var token = req.cookies.token
-  var username = req.cookies.username
+//  var token = req.cookies.token
+//  var username = req.cookies.username
   // console.log(token, username)
   next()
 }
@@ -40,7 +40,7 @@ require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
 
-db.sequelize.sync({}).then(function() {
+db.sequelize.sync({force: true}).then(function() {
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
