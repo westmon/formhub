@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "",
-    "database": "formhub_development",
-    "host": "127.0.0.1",
+    "username": "bddc88793cc643",
+    "password": "2ab236c1",
+    "database": "heroku_991f0eb47598c16",
+    "host": "us-cdbr-iron-east-05.cleardb.net",
     "dialect": "mysql",
     "logging": false
   },
