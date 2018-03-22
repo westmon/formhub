@@ -2,7 +2,7 @@
   "development": {
     "username": "bddc88793cc643",
     "password": "2ab236c1",
-    "database": "formhub_development",
+    "database": "heroku_991f0eb47598c16",
     "host": "us-cdbr-iron-east-05.cleardb.net",
     "dialect": "mysql",
     "logging": false
@@ -10,14 +10,14 @@
   "test": {
     "username": "bddc88793cc643",
     "password": "2ab236c1",
-    "database": "formhub_development",
+    "database": "heroku_991f0eb47598c16",
     "host": "us-cdbr-iron-east-05.cleardb.net",
     "dialect": "mysql"
   },
   "production": {
     "username": "bddc88793cc643",
     "password": "2ab236c1",
-    "database": "formhub_development",
+    "database": "heroku_991f0eb47598c16",
     "host": "us-cdbr-iron-east-05.cleardb.net",
     "dialect": "mysql"
   }
