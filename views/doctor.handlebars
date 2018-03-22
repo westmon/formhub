@@ -121,14 +121,39 @@
 										<div class="form-group">
 											<label class="col-md-3 control-label">Select Patient Forms</label>
 											<div class="col-md-9">
-												{{#each forms}}
+									
 													<div class="checkbox">
 														<label>
-															<input form-id="{{id}}" type="checkbox" value="" />
-															{{name}}
+															<input form-id="emContact" type="checkbox" value="" />
+															Emergency Contact
 														</label>
 													</div>
-												{{/each}}
+													<div class="checkbox">
+														<label>
+															<input form-id="pt_consent" type="checkbox" value="" />
+															Patient Consent
+														</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input form-id="insurance" type="checkbox" value="" />
+															Insurance
+														</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input form-id="form_history" type="checkbox" value="" />
+															Medical History
+														</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input form-id="new_patient" type="checkbox" value="" />
+															New Patient
+														</label>
+													</div>
+													
+
 											</div>
 										</div>
 										<div class="form-group">
